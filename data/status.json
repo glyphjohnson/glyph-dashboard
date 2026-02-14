@@ -1,0 +1,710 @@
+{
+  "timestamp": "2026-02-14T18:54:39.809Z",
+  "sessions": {
+    "path": "/home/glyph/.openclaw/agents/main/sessions/sessions.json",
+    "count": 11,
+    "activeMinutes": null,
+    "sessions": [
+      {
+        "key": "agent:main:discord:channel:1472242935868424445",
+        "kind": "group",
+        "updatedAt": 1771095202037,
+        "ageMs": 72110,
+        "sessionId": "49fe01bd-7ef1-4234-8bec-639bc7f18b7b",
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 2100,
+        "outputTokens": 720,
+        "totalTokens": 112906,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:0f45512a-a668-41ff-86f7-71cdff51499a",
+        "kind": "direct",
+        "updatedAt": 1771095199375,
+        "ageMs": 74772,
+        "sessionId": "6e85cfd7-e9b5-44ad-bda6-2642aff4b1e6",
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "model": "grok-4-1-fast",
+        "contextTokens": 200000
+      },
+      {
+        "key": "agent:main:subagent:658014a4-e1ba-4107-bc59-d05c345a2af0",
+        "kind": "direct",
+        "updatedAt": 1771095199162,
+        "ageMs": 74985,
+        "sessionId": "68656add-271b-478a-a36d-b7c992c41d86",
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "model": "grok-4-1-fast",
+        "contextTokens": 200000
+      },
+      {
+        "key": "agent:main:subagent:21b3d6eb-2c58-4927-9aaa-3f9dd0ca8354",
+        "kind": "direct",
+        "updatedAt": 1771095198947,
+        "ageMs": 75200,
+        "sessionId": "046e16ec-54c8-4d30-a7b8-4a78701564cd",
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "model": "grok-4-1-fast",
+        "contextTokens": 200000
+      },
+      {
+        "key": "agent:main:subagent:e30493c4-04e7-4117-8766-ff58a5ea0d10",
+        "kind": "direct",
+        "updatedAt": 1771094859994,
+        "ageMs": 414153,
+        "sessionId": "71efbba9-5daa-4344-9567-0bd4d0de8740",
+        "abortedLastRun": false,
+        "inputTokens": 2911,
+        "outputTokens": 5324,
+        "totalTokens": 15659,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:7ae2e557-436e-4482-94aa-251fec77980d",
+        "kind": "direct",
+        "updatedAt": 1771093997716,
+        "ageMs": 1276431,
+        "sessionId": "4d34a26a-6530-4107-84a2-54547285e663",
+        "abortedLastRun": false,
+        "inputTokens": -28217,
+        "outputTokens": 4852,
+        "totalTokens": 16667,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:6465711b-a41e-4291-a928-b9d5725d30d7",
+        "kind": "direct",
+        "updatedAt": 1771093964048,
+        "ageMs": 1310099,
+        "sessionId": "1880d03e-5c10-4b27-9b55-f3958dc0f247",
+        "abortedLastRun": false,
+        "inputTokens": 5726,
+        "outputTokens": 5847,
+        "totalTokens": 24281,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:49e13222-faea-4ba4-aa57-728db2576be6",
+        "kind": "direct",
+        "updatedAt": 1771093950066,
+        "ageMs": 1324081,
+        "sessionId": "3b3c21b7-30be-46e2-a17b-ae78bdb914eb",
+        "abortedLastRun": false,
+        "inputTokens": 11011,
+        "outputTokens": 3166,
+        "totalTokens": 11308,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:9c263842-436b-4982-9b77-cdee96d12f87",
+        "kind": "direct",
+        "updatedAt": 1771093925950,
+        "ageMs": 1348197,
+        "sessionId": "fdc6d9b3-b1bc-473f-8dee-09e98d723e19",
+        "abortedLastRun": false,
+        "inputTokens": -10309,
+        "outputTokens": 2366,
+        "totalTokens": 11165,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:subagent:90dd474e-a9ff-45cb-ac6a-c86831b74b47",
+        "kind": "direct",
+        "updatedAt": 1771093818586,
+        "ageMs": 1455561,
+        "sessionId": "c77ed4f3-417c-4236-9619-ff61b8ae4b14",
+        "abortedLastRun": false,
+        "inputTokens": 30657,
+        "outputTokens": 8021,
+        "totalTokens": 18373,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      {
+        "key": "agent:main:main",
+        "kind": "direct",
+        "updatedAt": 1771093422894,
+        "ageMs": 1851253,
+        "sessionId": "b837c18f-9e4d-4215-8e8a-e6788335d1d7",
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 1519,
+        "outputTokens": 15,
+        "totalTokens": 29667,
+        "totalTokensFresh": true,
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      }
+    ]
+  },
+  "status": {
+    "heartbeat": {
+      "defaultAgentId": "main",
+      "agents": [
+        {
+          "agentId": "main",
+          "enabled": true,
+          "every": "30m",
+          "everyMs": 1800000
+        }
+      ]
+    },
+    "channelSummary": [
+      "Discord: configured",
+      "  - default (token:config)",
+      "Mattermost: not configured"
+    ],
+    "queuedSystemEvents": [],
+    "sessions": {
+      "paths": [
+        "/home/glyph/.openclaw/agents/main/sessions/sessions.json"
+      ],
+      "count": 11,
+      "defaults": {
+        "model": "grok-4-1-fast",
+        "contextTokens": 2000000
+      },
+      "recent": [
+        {
+          "agentId": "main",
+          "key": "agent:main:discord:channel:1472242935868424445",
+          "kind": "group",
+          "sessionId": "49fe01bd-7ef1-4234-8bec-639bc7f18b7b",
+          "updatedAt": 1771095279409,
+          "age": 25,
+          "systemSent": true,
+          "abortedLastRun": false,
+          "inputTokens": 2057,
+          "outputTokens": 120,
+          "totalTokens": 113225,
+          "totalTokensFresh": true,
+          "remainingTokens": 1886775,
+          "percentUsed": 6,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "system",
+            "id:49fe01bd-7ef1-4234-8bec-639bc7f18b7b"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:658014a4-e1ba-4107-bc59-d05c345a2af0",
+          "kind": "direct",
+          "sessionId": "68656add-271b-478a-a36d-b7c992c41d86",
+          "updatedAt": 1771095276788,
+          "age": 2646,
+          "abortedLastRun": false,
+          "inputTokens": 36067,
+          "outputTokens": 4905,
+          "totalTokens": 36355,
+          "totalTokensFresh": true,
+          "remainingTokens": 1963645,
+          "percentUsed": 2,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:68656add-271b-478a-a36d-b7c992c41d86"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:0f45512a-a668-41ff-86f7-71cdff51499a",
+          "kind": "direct",
+          "sessionId": "6e85cfd7-e9b5-44ad-bda6-2642aff4b1e6",
+          "updatedAt": 1771095199375,
+          "age": 80059,
+          "totalTokens": null,
+          "totalTokensFresh": false,
+          "remainingTokens": null,
+          "percentUsed": null,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:6e85cfd7-e9b5-44ad-bda6-2642aff4b1e6"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:21b3d6eb-2c58-4927-9aaa-3f9dd0ca8354",
+          "kind": "direct",
+          "sessionId": "046e16ec-54c8-4d30-a7b8-4a78701564cd",
+          "updatedAt": 1771095198947,
+          "age": 80487,
+          "totalTokens": null,
+          "totalTokensFresh": false,
+          "remainingTokens": null,
+          "percentUsed": null,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:046e16ec-54c8-4d30-a7b8-4a78701564cd"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:e30493c4-04e7-4117-8766-ff58a5ea0d10",
+          "kind": "direct",
+          "sessionId": "71efbba9-5daa-4344-9567-0bd4d0de8740",
+          "updatedAt": 1771094859994,
+          "age": 419440,
+          "abortedLastRun": false,
+          "inputTokens": 2911,
+          "outputTokens": 5324,
+          "totalTokens": 15659,
+          "totalTokensFresh": true,
+          "remainingTokens": 1984341,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:71efbba9-5daa-4344-9567-0bd4d0de8740"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:7ae2e557-436e-4482-94aa-251fec77980d",
+          "kind": "direct",
+          "sessionId": "4d34a26a-6530-4107-84a2-54547285e663",
+          "updatedAt": 1771093997716,
+          "age": 1281718,
+          "abortedLastRun": false,
+          "inputTokens": -28217,
+          "outputTokens": 4852,
+          "totalTokens": 16667,
+          "totalTokensFresh": true,
+          "remainingTokens": 1983333,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:4d34a26a-6530-4107-84a2-54547285e663"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:6465711b-a41e-4291-a928-b9d5725d30d7",
+          "kind": "direct",
+          "sessionId": "1880d03e-5c10-4b27-9b55-f3958dc0f247",
+          "updatedAt": 1771093964048,
+          "age": 1315386,
+          "abortedLastRun": false,
+          "inputTokens": 5726,
+          "outputTokens": 5847,
+          "totalTokens": 24281,
+          "totalTokensFresh": true,
+          "remainingTokens": 1975719,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:1880d03e-5c10-4b27-9b55-f3958dc0f247"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:49e13222-faea-4ba4-aa57-728db2576be6",
+          "kind": "direct",
+          "sessionId": "3b3c21b7-30be-46e2-a17b-ae78bdb914eb",
+          "updatedAt": 1771093950066,
+          "age": 1329368,
+          "abortedLastRun": false,
+          "inputTokens": 11011,
+          "outputTokens": 3166,
+          "totalTokens": 11308,
+          "totalTokensFresh": true,
+          "remainingTokens": 1988692,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:3b3c21b7-30be-46e2-a17b-ae78bdb914eb"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:9c263842-436b-4982-9b77-cdee96d12f87",
+          "kind": "direct",
+          "sessionId": "fdc6d9b3-b1bc-473f-8dee-09e98d723e19",
+          "updatedAt": 1771093925950,
+          "age": 1353484,
+          "abortedLastRun": false,
+          "inputTokens": -10309,
+          "outputTokens": 2366,
+          "totalTokens": 11165,
+          "totalTokensFresh": true,
+          "remainingTokens": 1988835,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:fdc6d9b3-b1bc-473f-8dee-09e98d723e19"
+          ]
+        },
+        {
+          "agentId": "main",
+          "key": "agent:main:subagent:90dd474e-a9ff-45cb-ac6a-c86831b74b47",
+          "kind": "direct",
+          "sessionId": "c77ed4f3-417c-4236-9619-ff61b8ae4b14",
+          "updatedAt": 1771093818586,
+          "age": 1460848,
+          "abortedLastRun": false,
+          "inputTokens": 30657,
+          "outputTokens": 8021,
+          "totalTokens": 18373,
+          "totalTokensFresh": true,
+          "remainingTokens": 1981627,
+          "percentUsed": 1,
+          "model": "grok-4-1-fast",
+          "contextTokens": 2000000,
+          "flags": [
+            "id:c77ed4f3-417c-4236-9619-ff61b8ae4b14"
+          ]
+        }
+      ],
+      "byAgent": [
+        {
+          "agentId": "main",
+          "path": "/home/glyph/.openclaw/agents/main/sessions/sessions.json",
+          "count": 11,
+          "recent": [
+            {
+              "agentId": "main",
+              "key": "agent:main:discord:channel:1472242935868424445",
+              "kind": "group",
+              "sessionId": "49fe01bd-7ef1-4234-8bec-639bc7f18b7b",
+              "updatedAt": 1771095279409,
+              "age": 25,
+              "systemSent": true,
+              "abortedLastRun": false,
+              "inputTokens": 2057,
+              "outputTokens": 120,
+              "totalTokens": 113225,
+              "totalTokensFresh": true,
+              "remainingTokens": 1886775,
+              "percentUsed": 6,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "system",
+                "id:49fe01bd-7ef1-4234-8bec-639bc7f18b7b"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:658014a4-e1ba-4107-bc59-d05c345a2af0",
+              "kind": "direct",
+              "sessionId": "68656add-271b-478a-a36d-b7c992c41d86",
+              "updatedAt": 1771095276788,
+              "age": 2646,
+              "abortedLastRun": false,
+              "inputTokens": 36067,
+              "outputTokens": 4905,
+              "totalTokens": 36355,
+              "totalTokensFresh": true,
+              "remainingTokens": 1963645,
+              "percentUsed": 2,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:68656add-271b-478a-a36d-b7c992c41d86"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:0f45512a-a668-41ff-86f7-71cdff51499a",
+              "kind": "direct",
+              "sessionId": "6e85cfd7-e9b5-44ad-bda6-2642aff4b1e6",
+              "updatedAt": 1771095199375,
+              "age": 80059,
+              "totalTokens": null,
+              "totalTokensFresh": false,
+              "remainingTokens": null,
+              "percentUsed": null,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:6e85cfd7-e9b5-44ad-bda6-2642aff4b1e6"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:21b3d6eb-2c58-4927-9aaa-3f9dd0ca8354",
+              "kind": "direct",
+              "sessionId": "046e16ec-54c8-4d30-a7b8-4a78701564cd",
+              "updatedAt": 1771095198947,
+              "age": 80487,
+              "totalTokens": null,
+              "totalTokensFresh": false,
+              "remainingTokens": null,
+              "percentUsed": null,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:046e16ec-54c8-4d30-a7b8-4a78701564cd"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:e30493c4-04e7-4117-8766-ff58a5ea0d10",
+              "kind": "direct",
+              "sessionId": "71efbba9-5daa-4344-9567-0bd4d0de8740",
+              "updatedAt": 1771094859994,
+              "age": 419440,
+              "abortedLastRun": false,
+              "inputTokens": 2911,
+              "outputTokens": 5324,
+              "totalTokens": 15659,
+              "totalTokensFresh": true,
+              "remainingTokens": 1984341,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:71efbba9-5daa-4344-9567-0bd4d0de8740"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:7ae2e557-436e-4482-94aa-251fec77980d",
+              "kind": "direct",
+              "sessionId": "4d34a26a-6530-4107-84a2-54547285e663",
+              "updatedAt": 1771093997716,
+              "age": 1281718,
+              "abortedLastRun": false,
+              "inputTokens": -28217,
+              "outputTokens": 4852,
+              "totalTokens": 16667,
+              "totalTokensFresh": true,
+              "remainingTokens": 1983333,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:4d34a26a-6530-4107-84a2-54547285e663"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:6465711b-a41e-4291-a928-b9d5725d30d7",
+              "kind": "direct",
+              "sessionId": "1880d03e-5c10-4b27-9b55-f3958dc0f247",
+              "updatedAt": 1771093964048,
+              "age": 1315386,
+              "abortedLastRun": false,
+              "inputTokens": 5726,
+              "outputTokens": 5847,
+              "totalTokens": 24281,
+              "totalTokensFresh": true,
+              "remainingTokens": 1975719,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:1880d03e-5c10-4b27-9b55-f3958dc0f247"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:49e13222-faea-4ba4-aa57-728db2576be6",
+              "kind": "direct",
+              "sessionId": "3b3c21b7-30be-46e2-a17b-ae78bdb914eb",
+              "updatedAt": 1771093950066,
+              "age": 1329368,
+              "abortedLastRun": false,
+              "inputTokens": 11011,
+              "outputTokens": 3166,
+              "totalTokens": 11308,
+              "totalTokensFresh": true,
+              "remainingTokens": 1988692,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:3b3c21b7-30be-46e2-a17b-ae78bdb914eb"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:9c263842-436b-4982-9b77-cdee96d12f87",
+              "kind": "direct",
+              "sessionId": "fdc6d9b3-b1bc-473f-8dee-09e98d723e19",
+              "updatedAt": 1771093925950,
+              "age": 1353484,
+              "abortedLastRun": false,
+              "inputTokens": -10309,
+              "outputTokens": 2366,
+              "totalTokens": 11165,
+              "totalTokensFresh": true,
+              "remainingTokens": 1988835,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:fdc6d9b3-b1bc-473f-8dee-09e98d723e19"
+              ]
+            },
+            {
+              "agentId": "main",
+              "key": "agent:main:subagent:90dd474e-a9ff-45cb-ac6a-c86831b74b47",
+              "kind": "direct",
+              "sessionId": "c77ed4f3-417c-4236-9619-ff61b8ae4b14",
+              "updatedAt": 1771093818586,
+              "age": 1460848,
+              "abortedLastRun": false,
+              "inputTokens": 30657,
+              "outputTokens": 8021,
+              "totalTokens": 18373,
+              "totalTokensFresh": true,
+              "remainingTokens": 1981627,
+              "percentUsed": 1,
+              "model": "grok-4-1-fast",
+              "contextTokens": 2000000,
+              "flags": [
+                "id:c77ed4f3-417c-4236-9619-ff61b8ae4b14"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "os": {
+      "platform": "linux",
+      "arch": "arm64",
+      "release": "6.8.0-100-generic",
+      "label": "linux 6.8.0-100-generic (arm64)"
+    },
+    "update": {
+      "root": "/home/glyph/.npm-global/lib/node_modules/openclaw",
+      "installKind": "package",
+      "packageManager": "pnpm",
+      "deps": {
+        "manager": "pnpm",
+        "status": "unknown",
+        "lockfilePath": "/home/glyph/.npm-global/lib/node_modules/openclaw/pnpm-lock.yaml",
+        "markerPath": "/home/glyph/.npm-global/lib/node_modules/openclaw/node_modules/.modules.yaml",
+        "reason": "lockfile missing"
+      },
+      "registry": {
+        "latestVersion": "2026.2.13"
+      }
+    },
+    "updateChannel": "stable",
+    "updateChannelSource": "default",
+    "memory": null,
+    "memoryPlugin": {
+      "enabled": true,
+      "slot": "memory-core"
+    },
+    "gateway": {
+      "mode": "local",
+      "url": "ws://127.0.0.1:18789",
+      "urlSource": "local loopback",
+      "misconfigured": false,
+      "reachable": true,
+      "connectLatencyMs": 44,
+      "self": {
+        "host": "ubuntu-8gb-nbg1-1",
+        "ip": "46.225.137.185",
+        "version": "unknown",
+        "platform": "linux 6.8.0-100-generic"
+      },
+      "error": null
+    },
+    "gatewayService": {
+      "label": "systemd",
+      "installed": true,
+      "loadedText": "enabled",
+      "runtimeShort": "stopped (state activating)"
+    },
+    "nodeService": {
+      "label": "systemd",
+      "installed": false,
+      "loadedText": "disabled",
+      "runtimeShort": "stopped (state inactive)"
+    },
+    "agents": {
+      "defaultId": "main",
+      "agents": [
+        {
+          "id": "main",
+          "workspaceDir": "/home/glyph/.openclaw/workspace",
+          "bootstrapPending": false,
+          "sessionsPath": "/home/glyph/.openclaw/agents/main/sessions/sessions.json",
+          "sessionsCount": 11,
+          "lastUpdatedAt": 1771095276855,
+          "lastActiveAgeMs": 2453
+        }
+      ],
+      "totalSessions": 11,
+      "bootstrapPendingCount": 0
+    },
+    "securityAudit": {
+      "ts": 1771095279457,
+      "summary": {
+        "critical": 2,
+        "warn": 3,
+        "info": 1
+      },
+      "findings": [
+        {
+          "checkId": "summary.attack_surface",
+          "severity": "info",
+          "title": "Attack surface summary",
+          "detail": "groups: open=1, allowlist=0\ntools.elevated: enabled\nhooks.webhooks: disabled\nhooks.internal: disabled\nbrowser control: enabled"
+        },
+        {
+          "checkId": "gateway.trusted_proxies_missing",
+          "severity": "warn",
+          "title": "Reverse proxy headers are not trusted",
+          "detail": "gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.",
+          "remediation": "Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only."
+        },
+        {
+          "checkId": "gateway.nodes.deny_commands_ineffective",
+          "severity": "warn",
+          "title": "Some gateway.nodes.denyCommands entries are ineffective",
+          "detail": "gateway.nodes.denyCommands uses exact command-name matching only.\n- Unknown command names (not in defaults/allowCommands): camera.snap, camera.clip, screen.record, calendar.add, contacts.add, reminders.add",
+          "remediation": "Use exact command names (for example: canvas.present, canvas.hide, canvas.navigate, canvas.eval, canvas.snapshot, canvas.a2ui.push, canvas.a2ui.pushJSONL, canvas.a2ui.reset). If you need broader restrictions, remove risky commands from allowCommands/default workflows."
+        },
+        {
+          "checkId": "security.exposure.open_groups_with_elevated",
+          "severity": "critical",
+          "title": "Open groupPolicy with elevated tools enabled",
+          "detail": "Found groupPolicy=\"open\" at:\n- channels.discord.groupPolicy\nWith tools.elevated enabled, a prompt injection in those rooms can become a high-impact incident.",
+          "remediation": "Set groupPolicy=\"allowlist\" and keep elevated allowlists extremely tight."
+        },
+        {
+          "checkId": "channels.discord.dm.scope_main_multiuser",
+          "severity": "warn",
+          "title": "Discord DMs share the main session",
+          "detail": "Multiple DM senders currently share the main session, which can leak context across users.",
+          "remediation": "Run: openclaw config set session.dmScope \"per-channel-peer\" (or \"per-account-channel-peer\" for multi-account channels) to isolate DM sessions per sender."
+        },
+        {
+          "checkId": "channels.discord.warning.2",
+          "severity": "critical",
+          "title": "Discord security warning",
+          "detail": "Discord guilds: groupPolicy=\"open\" with no guild/channel allowlist; any channel can trigger (mention-gated). Set channels.discord.groupPolicy=\"allowlist\" and configure channels.discord.guilds.<id>.channels."
+        }
+      ]
+    }
+  }
+}
