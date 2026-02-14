@@ -1,84 +1,184 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Glyph Sub-Agent Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%); color: white; margin: 0; padding: 2rem; }
-        .container { max-width: 1200px; margin: auto; }
-        h1 { text-align: center; color: #3b82f6; }
-        .subtitle { text-align: center; opacity: 0.8; font-style: italic; }
-        table { width: 100%; border-collapse: collapse; margin-top: 2rem; background: rgba(255,255,255,0.05); border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        th { background: rgba(59,130,246,0.2); font-weight: 600; }
-        .status { padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 600; }
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Glyph Dashboard - Live OpenClaw Subagents&lt;/title&gt;
+    &lt;style&gt;
+        * { box-sizing: border-box; }
+        body { 
+            font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%); 
+            color: white; 
+            margin: 0; 
+            padding: 1rem; 
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: auto; }
+        h1 { text-align: center; color: #3b82f6; margin-bottom: 0.5rem; }
+        .subtitle { text-align: center; opacity: 0.8; margin-bottom: 2rem; }
+        #error { color: #f59e0b; text-align: center; margin: 1rem 0; font-weight: 500; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .grid-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.08);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            min-height: 220px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .grid-cell:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background: rgba(255,255,255,0.12);
+        }
+        .status { 
+            padding: 0.5rem 1rem; 
+            border-radius: 9999px; 
+            font-weight: 600; 
+            font-size: 0.875rem;
+            margin: 0.25rem 0;
+        }
         .status.running { background: #10b981; color: white; }
-        .status.idle { background: #f59e0b; color: white; }
-        .revenue-high { color: #10b981; font-weight: bold; font-size: 1.1em; }
+        .status.active { background: #f59e0b; color: white; }
+        .status.idle { background: #6b7280; color: white; }
+        .tokens { font-family: monospace; }
+        .name { font-weight: 600; font-size: 1.1em; margin-bottom: 0.75rem; }
+        .runtime { opacity: 0.9; font-size: 1em; margin-bottom: 0.25rem; }
+        .last-activity { opacity: 0.75; font-size: 0.85em; margin-bottom: 0.25rem; }
+        .model { opacity: 0.85; font-size: 0.95em; margin-bottom: 0.5rem; }
         .controls { text-align: center; margin-top: 2rem; }
-        button { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; margin: 0 0.5rem; font-weight: 500; }
+        button { 
+            background: #3b82f6; 
+            color: white; 
+            border: none; 
+            padding: 0.75rem 2rem; 
+            border-radius: 0.5rem; 
+            cursor: pointer; 
+            font-weight: 500; 
+            transition: background 0.2s;
+        }
         button:hover { background: #2563eb; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>💼 Glyph Johnson Sub-Agent Dashboard</h1>
-        <p class="subtitle">Live data from OpenClaw sessions (updated every 5 min via cron). Last update: 2026-02-14 14:06 UTC | Total: 4 | Active: 1</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Start</th>
-                    <th>Last Activity</th>
-                    <th>Task</th>
-                    <th>Progress</th>
-                    <th>Revenue Potential</th>
-                </tr>
-            </thead>
-            <tbody>
-<tr>
-        <td>organisk-trafik</td>
-        <td><span class="status idle">IDLE</span></td>
-        <td>2026-02-14 11:00 UTC</td>
-        <td>2026-02-14 11:05 UTC</td>
-        <td>Reddit r/PromptEngineering + X threads for traffic</td>
-        <td>Post ready, manual exec guide generated</td>
-        <td class="revenue-high">High (organic visitors to PayPal)</td>
-    </tr>
-<tr>
-        <td>direct-outreach</td>
-        <td><span class="status idle">IDLE</span></td>
-        <td>2026-02-14 11:02 UTC</td>
-        <td>2026-02-14 11:04 UTC</td>
-        <td>DM templates + Shopify targets</td>
-        <td>Templates/targets/script ready in sub-outreach-*.md</td>
-        <td class="revenue-high">Medium (direct sales)</td>
-    </tr>
-<tr>
-        <td>community-acquisition</td>
-        <td><span class="status idle">IDLE</span></td>
-        <td>2026-02-14 11:03 UTC</td>
-        <td>2026-02-14 11:06 UTC</td>
-        <td>Discord servers + intro posts</td>
-        <td>Servers/posts ready</td>
-        <td class="revenue-high">High (viral)</td>
-    </tr>
-<tr>
-        <td>prompt-optimizer/marketing</td>
-        <td><span class="status running">RUNNING</span></td>
-        <td>2026-02-14 14:06 UTC</td>
-        <td>2026-02-14 14:06 UTC</td>
-        <td>Optimize prompts for marketing subs</td>
-        <td>In progress - generating marketing prompts</td>
-        <td class="revenue-high">High</td>
-    </tr>
+        .config { background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 0.5rem; margin-top: 2rem; font-size: 0.875rem; }
+        @media (max-width: 768px) {
+            body { padding: 0.5rem; }
+            .grid { 
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1rem;
+            }
+            .grid-cell { padding: 1.25rem; min-height: 200px; }
+        }
+        @media (max-width: 480px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;💼 Glyph Dashboard&lt;/h1&gt;
+        &lt;p class=&quot;subtitle&quot;&gt;Live OpenClaw Sessions &amp;amp; Subagents &lt;br&gt;Last update: &lt;span id=&quot;last-update&quot;&gt;Loading...&lt;/span&gt; | Subagents: &lt;span id=&quot;total-subs&quot;&gt;0&lt;/span&gt; | Active: &lt;span id=&quot;active-subs&quot;&gt;0&lt;/span&gt;&lt;/p&gt;
+        &lt;div id=&quot;error&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;sessions-grid&quot; class=&quot;grid&quot;&gt;
+            &lt;div class=&quot;grid-cell&quot; style=&quot;text-align:center; opacity:0.5;&quot;&gt;Loading...&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+            &lt;button onclick=&quot;updateDashboard()&quot;&gt;🔄 Refresh&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;config&quot;&gt;
+            &lt;p&gt;&lt;strong&gt;Setup:&lt;/strong&gt; Edit &lt;code&gt;API_BASE&lt;/code&gt; in &amp;lt;script&amp;gt; below to your OpenClaw gateway (e.g. &lt;code&gt;https://your-ngrok:port/api/&lt;/code&gt;). Ensure CORS enabled or use proxy.&lt;/p&gt;
+            &lt;p&gt;Expects JSON from &lt;code&gt;/sessions_list&lt;/code&gt; like &lt;code&gt;openclaw sessions list --json&lt;/code&gt;, &lt;code&gt;/cron&lt;/code&gt; like &lt;code&gt;openclaw cron list --json&lt;/code&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        // Configurable API base - CHANGE THIS
+        const API_BASE = &#39;http://127.0.0.1:18789/api/&#39;;  // or &#39;https://your-domain.com/openclaw/api/&#39;
 
-            </tbody>
-        </table>
-        <div class="controls">
-            <button onclick="location.reload()">Refresh</button>
-        </div>
-    </div>
-</body>
-</html>
+        async function fetchData(endpoint) {
+            const response = await fetch(API_BASE + endpoint);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return await response.json();
+        }
+
+        function formatTime(ms) {
+            return new Date(ms).toLocaleString(&#39;en-GB&#39;, { timeZone: &#39;UTC&#39; });
+        }
+
+        function getAgeStatus(ageMs) {
+            if (ageMs &lt; 30000) return &#39;running&#39;;
+            if (ageMs &lt; 5 * 60 * 1000) return &#39;active&#39;;
+            return &#39;idle&#39;;
+        }
+
+        function shortLabel(key) {
+            const parts = key.split(&#39;:&#39;);
+            return parts[parts.length - 1];
+        }
+
+        function formatTokens(total, ctx) {
+            if (total === null || ctx === 0) return &#39;N/A&#39;;
+            return Math.round((total / ctx) * 100) + &#39;%&#39;;
+        }
+
+        async function updateDashboard() {
+            const errorEl = document.getElementById(&#39;error&#39;);
+            const grid = document.getElementById(&#39;sessions-grid&#39;);
+            errorEl.style.display = &#39;none&#39;;
+            grid.innerHTML = &#39;&lt;div class=&quot;grid-cell&quot; style=&quot;text-align:center; opacity:0.5;&quot;&gt;Loading...&lt;/div&gt;&#39;;
+
+            try {
+                const sessionsData = await fetchData(&#39;sessions_list&#39;);
+                const sessions = sessionsData.sessions || [];
+                const subagents = sessions.filter(s =&gt; s.key.includes(&#39;subagent:&#39;));
+                const now = Date.now();
+                subagents.forEach(s =&gt; s.ageMs = now - s.updatedAt);
+
+                const totalSubs = subagents.length;
+                const activeSubs = subagents.filter(s =&gt; s.ageMs &lt; 10 * 60 * 1000).length;
+
+                document.getElementById(&#39;last-update&#39;).textContent = new Date().toLocaleString(&#39;en-GB&#39;, { timeZone: &#39;UTC&#39; });
+                document.getElementById(&#39;total-subs&#39;).textContent = totalSubs;
+                document.getElementById(&#39;active-subs&#39;).textContent = activeSubs;
+
+                if (subagents.length === 0) {
+                    grid.innerHTML = &#39;&lt;div class=&quot;grid-cell&quot; style=&quot;grid-column: 1 / -1; opacity:0.5;&quot;&gt;No subagents running&lt;/div&gt;&#39;;
+                    return;
+                }
+
+                subagents.sort((a, b) =&gt; b.ageMs - a.ageMs);
+                let cells = [];
+                subagents.forEach(session =&gt; {
+                    const status = getAgeStatus(session.ageMs);
+                    cells.push(`
+                        &lt;div class=&quot;grid-cell&quot;&gt;
+                            &lt;div class=&quot;name&quot;&gt;${shortLabel(session.key)}&lt;/div&gt;
+                            &lt;span class=&quot;status ${status}&quot;&gt;${status.toUpperCase()}&lt;/span&gt;
+                            &lt;div class=&quot;runtime&quot;&gt;${Math.round(session.ageMs / 1000 / 60)}m&lt;/div&gt;
+                            &lt;div class=&quot;last-activity&quot;&gt;${formatTime(session.updatedAt)}&lt;/div&gt;
+                            &lt;div class=&quot;model&quot;&gt;${session.model || &#39;-&#39;}&lt;/div&gt;
+                            &lt;div class=&quot;tokens&quot;&gt;${formatTokens(session.totalTokens, session.contextTokens || 200000)}&lt;/div&gt;
+                        &lt;/div&gt;
+                    `);
+                });
+                grid.innerHTML = cells.join(&#39;&#39;);
+
+            } catch (error) {
+                console.error(&#39;Dashboard update failed:&#39;, error);
+                errorEl.textContent = `Fetch error: ${error.message}. Check API_BASE &amp;amp; CORS.`;
+                errorEl.style.display = &#39;block&#39;;
+            }
+        }
+
+        setInterval(updateDashboard, 30000);
+        updateDashboard();
+    &lt;/script&gt;
+&lt;/html&gt;
