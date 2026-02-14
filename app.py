@@ -30,4 +30,4 @@ def load_data(filename, default):
 
 if __name__ == '__main__':
     os.makedirs(DATA_DIR, exist_ok=True)
-    app.run(host='0.0.0.0', port=8080, debug=False)
+    app.run(host='0.0.0.0', port=5000, debug=True)
