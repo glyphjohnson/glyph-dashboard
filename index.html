@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glyph Sub-Agent Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%); color: white; margin: 0; padding: 2rem; }
+        .container { max-width: 1200px; margin: auto; }
+        h1 { text-align: center; color: #3b82f6; }
+        .subtitle { text-align: center; opacity: 0.8; font-style: italic; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; background: rgba(255,255,255,0.05); border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        th { background: rgba(59,130,246,0.2); font-weight: 600; }
+        .status { padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 600; }
+        .status.running { background: #10b981; color: white; }
+        .status.idle { background: #f59e0b; color: white; }
+        .revenue-high { color: #10b981; font-weight: bold; font-size: 1.1em; }
+        .controls { text-align: center; margin-top: 2rem; }
+        button { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; margin: 0 0.5rem; font-weight: 500; }
+        button:hover { background: #2563eb; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💼 Glyph Johnson Sub-Agent Dashboard</h1>
+        <p class="subtitle">Live data from OpenClaw sessions (updated every 5 min via cron). Last update: 2026-02-14 14:06 UTC | Total: 4 | Active: 1</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Start</th>
+                    <th>Last Activity</th>
+                    <th>Task</th>
+                    <th>Progress</th>
+                    <th>Revenue Potential</th>
+                </tr>
+            </thead>
+            <tbody>
+<tr>
+        <td>organisk-trafik</td>
+        <td><span class="status idle">IDLE</span></td>
+        <td>2026-02-14 11:00 UTC</td>
+        <td>2026-02-14 11:05 UTC</td>
+        <td>Reddit r/PromptEngineering + X threads for traffic</td>
+        <td>Post ready, manual exec guide generated</td>
+        <td class="revenue-high">High (organic visitors to PayPal)</td>
+    </tr>
+<tr>
+        <td>direct-outreach</td>
+        <td><span class="status idle">IDLE</span></td>
+        <td>2026-02-14 11:02 UTC</td>
+        <td>2026-02-14 11:04 UTC</td>
+        <td>DM templates + Shopify targets</td>
+        <td>Templates/targets/script ready in sub-outreach-*.md</td>
+        <td class="revenue-high">Medium (direct sales)</td>
+    </tr>
+<tr>
+        <td>community-acquisition</td>
+        <td><span class="status idle">IDLE</span></td>
+        <td>2026-02-14 11:03 UTC</td>
+        <td>2026-02-14 11:06 UTC</td>
+        <td>Discord servers + intro posts</td>
+        <td>Servers/posts ready</td>
+        <td class="revenue-high">High (viral)</td>
+    </tr>
+<tr>
+        <td>prompt-optimizer/marketing</td>
+        <td><span class="status running">RUNNING</span></td>
+        <td>2026-02-14 14:06 UTC</td>
+        <td>2026-02-14 14:06 UTC</td>
+        <td>Optimize prompts for marketing subs</td>
+        <td>In progress - generating marketing prompts</td>
+        <td class="revenue-high">High</td>
+    </tr>
+
+            </tbody>
+        </table>
+        <div class="controls">
+            <button onclick="location.reload()">Refresh</button>
+        </div>
+    </div>
+</body>
+</html>
