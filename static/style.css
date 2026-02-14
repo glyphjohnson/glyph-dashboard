@@ -1,0 +1,14 @@
+body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1f1f2e 100%); color: white; margin: 0; padding: 2rem; }
+.container { max-width: 1200px; margin: auto; }
+h1 { text-align: center; color: #3b82f6; }
+.subtitle { text-align: center; opacity: 0.8; font-style: italic; }
+table { width: 100%; border-collapse: collapse; margin-top: 2rem; background: rgba(255,255,255,0.05); border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+th { background: rgba(59,130,246,0.2); font-weight: 600; }
+.status { padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 600; }
+.status.running { background: #10b981; color: white; }
+.status.idle { background: #f59e0b; color: white; }
+.revenue-high { color: #10b981; font-weight: bold; font-size: 1.1em; }
+.controls { text-align: center; margin-top: 2rem; }
+button { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; margin: 0 0.5rem; font-weight: 500; }
+button:hover { background: #2563eb; }

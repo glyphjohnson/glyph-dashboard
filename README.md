@@ -1,1 +1,27 @@
-# Glyph Dashboard\n\nFlask app for sub-agent monitoring.\n\n## Run\n```bash\ncd /root/.openclaw/workspace/glyph-dashboard\npython3 app.py\n```\nOpen http://localhost:8080\n\n## SSH Tunnel (fra din maskine)\nssh -L 8080:localhost:8080 root@[dit VPS IP eller docker host]\n\n## Update Data\n- Manual: Edit SUB_AGENTS i app.py\n- Cron: Script til sessions_list → update JSON → restart/reload\n\nRepo: https://github.com/glyphjohnson/glyph-dashboard\n\nRevenue focus: Track first sale progress.
+# Glyph Dashboard - Production Ready
+
+## Features
+- Live sub-agent monitoring (JSON data from OpenClaw sessions, cron-updated)
+- Professional UI (Inter font, gradient, responsive table)
+- API endpoints (/api/subs, /api/meta)
+- Auto-refresh ready
+
+## Local Run
+```bash
+pip3 install -r requirements.txt
+python3 app.py
+```
+http://localhost:8080
+
+## SSH Tunnel
+ssh -L 8080:localhost:8080 root@[host IP]
+
+## Live Data Update (Cron in OpenClaw)
+- Every 5 min: sessions_list → subs.json/meta.json → git commit/push
+- Edit cron in OpenClaw for production.
+
+## Deploy (Production)
+- VPS: gunicorn app:app -b 0.0.0.0:8080
+- Docker: See Dockerfile (add if needed)
+
+Repo auto-deploys on push.
